@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <%= points %>
+  <% include templates/header.ejs %>
+    <h1><%= title %></h1>
+    <% for(var i=0;i<5;i++){ %>
+     <p>tuna</p>
+    <% }%>
+    <p><%= name %> is awesome</p>
+
+  <p><%= videodata.categoryName %></p> <!--reading json data-->
+  <ul>
+    <% videodata.categories.forEach(function(item) { %>
+      <li><%=item.categoryName%></li>
+      <% }); %>
+
+
+
+  </ul>
+  </body>
+</html>
